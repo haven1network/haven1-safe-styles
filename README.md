@@ -1,30 +1,28 @@
-# safe-react-components
+# haven1-safe-styles
 
-![license](https://img.shields.io/github/license/safe-global/safe-react-components)
-![tests](https://img.shields.io/github/actions/workflow/status/safe-global/safe-react-components/test.yml?branch=main)
+![license](https://img.shields.io/github/license/haven1network/haven1-safe-styles)
 
 This repository contains a [@mui/material](https://material-ui.com/) theming and a set of useful React components written in TypeScript.
 
-These components and theming are being used to build the [Safe](https://github.com/safe-global/web-core) web and desktop app.
+These components and theming are being used to build the [safe-haven1](https://github.com/haven1network/safe-haven1) web and desktop app.
 
-As Safe allows to integrate third party applications ("Safe Apps"), these components can also be used to build Safe Apps with the following benefits:
+## How to run locally
+```bash
+  npm i to install depencies
+```
 
-- **Native feel:** Build your Safe Apps with a similar style as the one used by the Safe. This makes your Safe Apps feel almost like a native feature of the Safe.
-- **Blockchain-focused:** Some components solve common blockchain-related problems like inputs for ETH addresses and bigNumbers, identicon images, and more.
-- **Save time:** No need to build all components from scratch.
-
-## How to install
+## How to install as npm package
 
 ### Yarn
 
 ```bash
-   yarn add @safe-global/safe-react-components
+   yarn add @haven1network/haven1-safe-styles
 ```
 
 ### npm
 
 ```bash
-   npm install @safe-global/safe-react-components
+   npm install @haven1network/haven1-safe-styles
 ```
 
 ## Integration
@@ -35,7 +33,7 @@ Once everything is installed, you have to instantiate the SafeThemeProvider with
 
 ```js
 import { ThemeProvider } from '@mui/material/styles';
-import { SafeThemeProvider } from '@safe-global/safe-react-components';
+import { SafeThemeProvider } from '@haven1network/haven1-safe-styles';
 
 import App from './App';
 
@@ -52,10 +50,10 @@ export default () => (
 
 ## Using the components
 
-You can import every component exported from `@safe-global/safe-react-components` in the same way.
+You can import every component exported from `@haven1network/haven1-safe-styles` in the same way.
 
 ```js
-import { EthHashInfo } from '@safe-global/safe-react-components';
+import { EthHashInfo } from '@haven1network/haven1-safe-styles';
 
 const App = (account) => {
   return <EthHashInfo address={account} showCopyButton />;
@@ -70,16 +68,11 @@ The fonts will be bundled on `build` and a `fonts.css` file will be provided as 
 
 ```
 // from js/ts files
-import '@safe-global/safe-react-components/dist/fonts.css'
+import '@haven1network/haven1-safe-styles/dist/fonts.css'
 
 // from css files
-@import url(<path-to-node_modules>/@safe-global/safe-react-components/dist/fonts.css)
+@import url(<path-to-node_modules>/@haven1network/haven1-safe-styles/dist/fonts.css)
 ```
-
-## Storybook
-
-You can find documentation and examples of all our components in this [storybook](https://components.gnosis-safe.io/).
-
 ## Local development
 
 To develop on your local machine, install the dependencies (including the peer dependencies):
@@ -88,28 +81,8 @@ To develop on your local machine, install the dependencies (including the peer d
 yarn
 ```
 
-Launch the Storybook:
+Launch Storybook:
 
 ```
 yarn storybook
 ```
-
-## Testing
-
-Snapshot tests are generated automatically from the Storybook stories using the [StoryShots addon](https://github.com/storybookjs/storybook/tree/master/addons/storyshots/storyshots-core).
-
-To run the tests locally:
-
-```
-yarn test
-```
-
-Alternatively, run `yarn test --watch` to re-run the tests for each modification you do.
-Before you commit your changes, you need to update the snapshots and commit them as well. To do so, run `yarn test -u`.
-When the command finishes, the resulting snapshots will be the new baseline.
-
-If you want to add a new Jest test, make sure to put a file with the `.test.tsx` extension into the same directory as the corresponding component.
-
-## Examples
-
-At Safe we have developed some example Safe Apps. Here is the [repository](https://github.com/safe-global/safe-react-apps).

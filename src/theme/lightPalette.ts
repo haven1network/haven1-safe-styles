@@ -1,64 +1,64 @@
 const lightPalette = {
   text: {
-    primary: '#121312',
-    secondary: '#A1A3A7',
-    disabled: '#DDDEE0',
+    primary: '#121312', // darkest black
+    secondary: '#A1A3A7', // light grey
+    disabled: '#DDDEE0', // lightest grey
   },
   primary: {
-    dark: '#3c3c3c',
-    main: '#121312',
-    light: '#636669',
+    dark: '#3c3c3c', // darkest grey
+    main: '#121312', // darkest black
+    light: '#636669', // medium grey
   },
   secondary: {
-    dark: '#0FDA6D',
-    main: '#12FF80',
-    light: '#B0FFC9',
-    background: '#EFFFF4',
+    dark: '#106dff', // hover blue
+    main: '#0054d8', // primary blue
+    light: '#3381ff', // secondary blue
+    background: '#ecf3ff', // light blue
   },
   border: {
-    main: '#A1A3A7',
-    light: '#DCDEE0',
-    background: '#F4F4F4',
+    main: '#A1A3A7', // grey
+    light: '#DCDEE0', // medium grey
+    background: '#F4F4F4', // lightest grey
   },
   error: {
-    dark: '#AC2C3B',
-    main: '#FF5F72',
-    light: '#FFB4BD',
-    background: '#FFE6EA',
+    dark: '#eb1c3d', // hover red
+    main: '#cf1634', // red
+    light: '#FFB4BD', // pink
+    background: '#FFE6EA', // palest pink
   },
   success: {
-    dark: '#028D4C',
-    main: '#00B460',
-    light: '#72F5B8',
-    background: '#F2FFF9',
+    dark: '#028D4C', // Emerald Green
+    main: '#00B460', // bright/lighter green
+    light: '#72F5B8', // lightest green
+    background: '#F2FFF9', // almost white but green
   },
   info: {
-    dark: '#52BFDC',
-    main: '#5FDDFF',
-    light: '#B7F0FF',
-    background: '#EFFCFF',
+    dark: '#52BFDC', // sea blue
+    main: '#5FDDFF', // bright sea blue
+    light: '#B7F0FF', // pale sea blue
+    background: '#EFFCFF', // almost white but blue
   },
   warning: {
-    dark: '#CD674E',
-    main: '#FF8061',
-    light: '#FFB7A6',
-    background: '#FFF0ED',
+    dark: '#CD674E', // med orange
+    main: '#FF8061', // bright orange
+    light: '#FFB7A6', // soft orange / peach
+    background: '#FFF0ED', // almost white but orange
   },
   background: {
-    default: '#F4F4F4',
-    main: '#F4F4F4',
-    paper: '#FFFFFF',
-    light: '#EFFFF4',
+    default: '#F4F4F4', // light grey
+    main: '#F4F4F4', // light grey
+    paper: '#FFFFFF', // white
+    light: 'rgba(0, 0, 0, 0.1)',
   },
   backdrop: {
-    main: '#636669',
+    main: '#636669', // medium grey
   },
   logo: {
-    main: '#121312',
-    background: '#EEEFF0',
+    main: '#121312', // darkest black
+    background: '#EEEFF0', // light grey
   },
   static: {
-    main: '#121312',
+    main: '#121312', // darkest black
   },
 };
 
