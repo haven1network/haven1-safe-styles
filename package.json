@@ -1,5 +1,5 @@
 {
-  "name": "@pkgdevnet/safe-styles",
+  "name": "@haven1network/haven1-safe-styles",
   "version": "1.0.0",
   "description": "Safe UI components",
   "main": "dist/index.min.js",
