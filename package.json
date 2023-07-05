@@ -1,5 +1,5 @@
 {
-  "name": "@haven1network/haven1-safe-styles",
+  "name": "@h1pkgs/safe-styles",
   "version": "1.0.0",
   "description": "Safe UI components",
   "main": "dist/index.min.js",
@@ -17,7 +17,7 @@
     "build-storybook": "build-storybook --docs",
     "storybook": "start-storybook -p 9009 --docs",
     "lint:check": "eslint './src/**/*.{js,jsx,ts,tsx}'",
-    "prettier": "prettier -w",
+    "prettier": "prettier --write \"src/**/*.@(js|jsx|ts|tsx)\"",
     "test": "jest tests/storybook.test.js",
     "test:ci": "yarn test --ci --coverage --json --watchAll=false --testLocationInResults --runInBand",
     "prepare": "yarn build"
