@@ -46,7 +46,7 @@ const lightPalette = {
   },
   background: {
     default: '#F4F4F4', // light grey
-    main: '#F4F4F4', // light grey
+    main: 'f3f5fc', // light blue/grey
     paper: '#FFFFFF', // white
     light: 'rgba(0, 0, 0, 0.1)',
   },
