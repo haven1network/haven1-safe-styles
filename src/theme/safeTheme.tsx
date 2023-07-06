@@ -67,7 +67,7 @@ const createSafeTheme = (mode: PaletteMode): Theme => {
     },
     spacing: base,
     shape: {
-      borderRadius: 6,
+      borderRadius: 8,
     },
     shadows: [
       'none',
