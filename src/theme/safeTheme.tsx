@@ -18,6 +18,10 @@ declare module '@mui/material/styles' {
       inverse: string;
       dark: string;
       white: string;
+      darkBlue: string;
+      primaryBlue: string;
+      lightBlue: string;
+      paleBlue: string;
     };
   }
   export interface PaletteOptions {
@@ -29,6 +33,10 @@ declare module '@mui/material/styles' {
       inverse: string;
       dark: string;
       white: string;
+      darkBlue: string;
+      primaryBlue: string;
+      lightBlue: string;
+      paleBlue: string;
     };
   }
 

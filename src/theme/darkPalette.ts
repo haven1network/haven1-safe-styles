@@ -64,6 +64,10 @@ const darkPalette = {
     inverse: '#FFFFFF',
     dark: '#121312',
     white: '#FFFFFF',
+    darkBlue: '#106dff', // blue
+    primaryBlue: '#0054d8', // primary blue
+    lightBlue: '#3381ff', // secondary blue
+    paleBlue: '#ecf3ff', // light blue
   },
 };
 
