@@ -90,16 +90,16 @@ const createSafeTheme = (mode: PaletteMode): Theme => {
     shadows: [
       'none',
       isDarkMode
-        ? `0 0 2px ${shadowColor}`
+        ? `none`
         : `0 1px 4px ${shadowColor}0a, 0 4px 10px ${shadowColor}14`,
       isDarkMode
-        ? `0 0 2px ${shadowColor}`
+        ? `none`
         : `0 1px 4px ${shadowColor}0a, 0 4px 10px ${shadowColor}14`,
       isDarkMode
-        ? `0 0 2px ${shadowColor}`
+        ? `none`
         : `0 2px 20px ${shadowColor}0a, 0 8px 32px ${shadowColor}14`,
       isDarkMode
-        ? `0 0 2px ${shadowColor}`
+        ? `none`
         : `0 8px 32px ${shadowColor}0a, 0 24px 60px ${shadowColor}14`,
       ...Array(20).fill('none'),
     ] as Shadows,
@@ -146,7 +146,7 @@ const createSafeTheme = (mode: PaletteMode): Theme => {
             borderRadius: theme.shape.borderRadius,
             fontWeight: 'bold',
             lineHeight: 1.25,
-            borderColor: theme.palette.primary.main,
+            borderColor: theme.palette.constants.primaryBlue,
             textTransform: 'none',
             '&:hover': {
               boxShadow: 'none',
