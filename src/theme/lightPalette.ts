@@ -70,10 +70,10 @@ const lightPalette = {
     paleBlue: '#ecf3ff',
   },
   neutrals: {
-    dark: '#636669', // grey
-    main: '#FFFFFF', // white
-    light: '#3381ff', // secondary-blue
-    background: '#303033', // medium black
+    dark: '#106dff', // hover blue
+    main: '#0054d8', // primary blue
+    light: '#3381ff', // secondary blue
+    background: '#ecf3ff', // light blue
   },
 };
 
