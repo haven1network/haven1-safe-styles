@@ -60,6 +60,11 @@ const darkPalette = {
   static: {
     main: '#121312', // darkest black
   },
+  constants: {
+    inverse: '#FFFFFF',
+    dark: '#121312',
+    white: '#FFFFFF',
+  },
 };
 
 export default darkPalette;

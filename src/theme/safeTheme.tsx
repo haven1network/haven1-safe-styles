@@ -14,12 +14,22 @@ declare module '@mui/material/styles' {
     logo: Palette['primary'];
     backdrop: Palette['primary'];
     static: Palette['primary'];
+    constants: {
+      inverse: string;
+      dark: string;
+      white: string;
+    };
   }
   export interface PaletteOptions {
     border: PaletteOptions['primary'];
     logo: PaletteOptions['primary'];
     backdrop: PaletteOptions['primary'];
     static: PaletteOptions['primary'];
+    constants: {
+      inverse: string;
+      dark: string;
+      white: string;
+    };
   }
 
   export interface TypeBackground {
