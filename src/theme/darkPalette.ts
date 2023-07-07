@@ -10,10 +10,10 @@ const darkPalette = {
     light: '#A1A3A7', // light grey
   },
   secondary: {
-    dark: '#636669', // grey
-    main: '#FFFFFF', // white
-    light: '#3381ff', // secondary-blue
-    background: '#303033', // medium black
+    dark: '#106dff', // hover blue
+    main: '#0054d8', // primary blue
+    light: '#3381ff', // secondary blue
+    background: '#ecf3ff', // light blue
   },
   border: {
     main: '#636669', // grey
@@ -64,10 +64,16 @@ const darkPalette = {
     inverse: '#FFFFFF',
     dark: '#121312',
     white: '#FFFFFF',
-    darkBlue: '#106dff', // blue
-    primaryBlue: '#0054d8', // primary blue
-    lightBlue: '#3381ff', // secondary blue
-    paleBlue: '#ecf3ff', // light blue
+    darkBlue: '#106dff',
+    primaryBlue: '#0054d8',
+    secondaryBlue: '#3381ff',
+    paleBlue: '#ecf3ff',
+  },
+  neutrals: {
+    dark: '#636669', // grey
+    main: '#FFFFFF', // white
+    light: '#3381ff', // secondary-blue
+    background: '#303033', // medium black
   },
 };
 

@@ -64,10 +64,16 @@ const lightPalette = {
     inverse: '#121312',
     dark: '#121312',
     white: '#FFFFFF',
-    darkBlue: '#106dff', // blue
-    primaryBlue: '#0054d8', // primary blue
-    lightBlue: '#3381ff', // secondary blue
-    paleBlue: '#ecf3ff', // light blue
+    darkBlue: '#106dff',
+    primaryBlue: '#0054d8',
+    secondaryBlue: '#3381ff',
+    paleBlue: '#ecf3ff',
+  },
+  neutrals: {
+    dark: '#636669', // grey
+    main: '#FFFFFF', // white
+    light: '#3381ff', // secondary-blue
+    background: '#303033', // medium black
   },
 };
 

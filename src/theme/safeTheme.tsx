@@ -20,8 +20,14 @@ declare module '@mui/material/styles' {
       white: string;
       darkBlue: string;
       primaryBlue: string;
-      lightBlue: string;
+      secondaryBlue: string;
       paleBlue: string;
+    };
+    neutrals: {
+      dark: string;
+      main: string;
+      light: string;
+      background: string;
     };
   }
   export interface PaletteOptions {
@@ -35,8 +41,14 @@ declare module '@mui/material/styles' {
       white: string;
       darkBlue: string;
       primaryBlue: string;
-      lightBlue: string;
+      secondaryBlue: string;
       paleBlue: string;
+    };
+    neutrals: {
+      dark: string;
+      main: string;
+      light: string;
+      background: string;
     };
   }
 
@@ -109,7 +121,7 @@ const createSafeTheme = (mode: PaletteMode): Theme => {
         styleOverrides: {
           head: ({ theme }) => ({
             ...theme.typography.body1,
-            color: theme.palette.primary.light,
+            color: theme.palette.background.light,
           }),
         },
       },
@@ -142,23 +154,25 @@ const createSafeTheme = (mode: PaletteMode): Theme => {
             fontSize: '16px',
             padding: '12px 24px',
           },
+          sizeLarge: {
+            fontSize: '16px',
+          },
           root: ({ theme }) => ({
             borderRadius: theme.shape.borderRadius,
             fontWeight: 'bold',
             lineHeight: 1.25,
-            borderColor: theme.palette.constants.primaryBlue,
+            boxShadow: 'none',
             textTransform: 'none',
             '&:hover': {
               boxShadow: 'none',
             },
           }),
           outlined: {
-            border: '2px solid',
+            border: '1px solid',
             '&:hover': {
-              border: '2px solid',
+              border: '1px solid',
             },
           },
-          sizeLarge: { fontSize: '16px' },
         },
       },
       MuiAccordion: {
