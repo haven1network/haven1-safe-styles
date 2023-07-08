@@ -33,9 +33,8 @@ declare module '@mui/material/styles' {
       main: string;
       hover: string;
     };
-    hover: {
-      light: string;
-      dark: string;
+    shadow: {
+      main: string;
     };
   }
   export interface PaletteOptions {
@@ -62,9 +61,8 @@ declare module '@mui/material/styles' {
       main: string;
       hover: string;
     };
-    hover: {
-      light: string;
-      dark: string;
+    shadow: {
+      main: string;
     };
   }
 

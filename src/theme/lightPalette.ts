@@ -79,9 +79,8 @@ const lightPalette = {
     main: '#106dff',
     hover: '#3381ff',
   },
-  hover: {
-    light: 'rgba(0, 0, 0, 0.07)',
-    dark: '#2C2C2C',
+  shadow: {
+    main: 'rgba(0, 0, 0, 0.1)',
   },
 };
 
