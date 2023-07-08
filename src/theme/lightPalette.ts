@@ -5,8 +5,8 @@ const lightPalette = {
     disabled: '#DDDEE0', // lightest grey
   },
   primary: {
-    dark: '#3c3c3c', // darkest grey
-    main: '#121312', // darkest black
+    main: '#0054d8', // secondary-blue
+    dark: '#3381ff', // primary-blue
     light: '#636669', // medium grey
   },
   secondary: {
@@ -74,6 +74,10 @@ const lightPalette = {
     main: '#0054d8', // primary blue
     light: '#3381ff', // secondary blue
     background: '#ecf3ff', // light blue
+  },
+  links: {
+    main: '#106dff',
+    hover: '#3381ff',
   },
 };
 

@@ -9,6 +9,7 @@ import FormControl from '@mui/material/FormControl';
 import InputLabel from '@mui/material/InputLabel';
 import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
+import Link from '@mui/material/Link';
 
 export const SimpleDemo = (): React.ReactElement => {
   return (
@@ -97,6 +98,11 @@ export const SimpleDemo = (): React.ReactElement => {
         <Tooltip title="Tooltip! :D" arrow placement="top">
           <Button>Hover!</Button>
         </Tooltip>
+      </Stack>
+      {/* Link demo */}
+      <Stack spacing={2} direction="column" alignItems={'flex-start'}>
+        <Typography variant="h5">Link</Typography>
+        <Link href="https://www.example.com">Example Link</Link>
       </Stack>
     </Stack>
   );

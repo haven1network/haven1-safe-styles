@@ -5,8 +5,8 @@ const darkPalette = {
     disabled: '#636669', // grey
   },
   primary: {
-    dark: '#0054d8', // primary blue
-    main: '#3381ff', // secondary-blue
+    main: '#0054d8', // primary blue
+    dark: '#3381ff', // secondary-blue
     light: '#A1A3A7', // light grey
   },
   secondary: {
@@ -74,6 +74,10 @@ const darkPalette = {
     main: '#FFFFFF', // white
     light: '#3381ff', // secondary-blue
     background: '#303033', // medium black
+  },
+  links: {
+    main: '#FFF',
+    hover: '#3381ff',
   },
 };
 

@@ -29,6 +29,10 @@ declare module '@mui/material/styles' {
       light: string;
       background: string;
     };
+    links: {
+      main: string;
+      hover: string;
+    };
   }
   export interface PaletteOptions {
     border: PaletteOptions['primary'];
@@ -49,6 +53,10 @@ declare module '@mui/material/styles' {
       main: string;
       light: string;
       background: string;
+    };
+    links: {
+      main: string;
+      hover: string;
     };
   }
 
@@ -121,7 +129,7 @@ const createSafeTheme = (mode: PaletteMode): Theme => {
         styleOverrides: {
           head: ({ theme }) => ({
             ...theme.typography.body1,
-            color: theme.palette.background.light,
+            color: theme.palette.text.secondary,
           }),
         },
       },
@@ -168,9 +176,12 @@ const createSafeTheme = (mode: PaletteMode): Theme => {
             },
           }),
           outlined: {
-            border: '1px solid',
+            border: '2px solid',
+            filter: 'brightness(0.9)',
             '&:hover': {
-              border: '1px solid',
+              border: '2px solid',
+              backgroundColor: 'transparent',
+              filter: 'brightness(1.1)',
             },
           },
         },
@@ -426,24 +437,53 @@ const createSafeTheme = (mode: PaletteMode): Theme => {
           }),
         },
       },
-      MuiOutlinedInput: {
+      MuiButtonBase: {
         styleOverrides: {
-          notchedOutline: ({ theme }) => ({
-            borderColor: theme.palette.border.main,
-          }),
           root: ({ theme }) => ({
-            borderColor: theme.palette.border.main,
+            '&.MuiButton-text:hover': {
+              backgroundColor: theme.palette.background.light,
+            },
+            '&.MuiMenuItem-root.Mui-selected': {
+              backgroundColor: theme.palette.background.light,
+            },
+          }),
+        },
+      },
+      MuiFormControl: {
+        styleOverrides: {
+          root: ({ theme }) => ({
+            '&:focus-within, &:hover': {
+              '& .MuiFormLabel-root': {
+                color: theme.palette.constants.inverse,
+              },
+              '& .MuiFormLabel-root-MuiInputLabel-root.Mui-focused ': {
+                color: theme.palette.constants.inverse,
+              },
+              '& .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline': {
+                borderColor: theme.palette.constants.inverse,
+              },
+              '&.MuiOutlinedInput-root .MuiSvgIcon-root.MuiSelect-iconOpen  .MuiOutlinedInput-notchedOutline':
+                {
+                  borderColor: theme.palette.constants.inverse,
+                },
+            },
           }),
         },
       },
       MuiSvgIcon: {
         styleOverrides: {
-          fontSizeSmall: {
-            width: '1rem',
-            height: '1rem',
-          },
+          root: ({ theme }) => ({
+            fontSizeSmall: {
+              width: '1rem',
+              height: '1rem',
+            },
+            '&.MuiSelect-iconOpen + .MuiOutlinedInput-notchedOutline': {
+              borderColor: theme.palette.constants.inverse,
+            },
+          }),
         },
       },
+
       MuiFilledInput: {
         styleOverrides: {
           root: ({ theme }) => ({
@@ -454,7 +494,7 @@ const createSafeTheme = (mode: PaletteMode): Theme => {
 
             '&:hover, &:focus, &.Mui-focused': {
               backgroundColor: theme.palette.background.paper,
-              borderColor: theme.palette.primary.main,
+              borderColor: theme.palette.constants.inverse,
             },
           }),
         },
@@ -517,8 +557,12 @@ const createSafeTheme = (mode: PaletteMode): Theme => {
         styleOverrides: {
           root: ({ theme }) => ({
             fontWeight: 700,
+            color: theme.palette.links.main,
+            textDecoration: 'none',
+            borderBottom: `1px solid transparent`,
             '&:hover': {
-              color: theme.palette.primary.light,
+              color: theme.palette.links.hover,
+              borderBottom: `1px solid ${theme.palette.links.hover}`,
             },
           }),
         },
