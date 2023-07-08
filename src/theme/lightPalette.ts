@@ -9,6 +9,7 @@ const lightPalette = {
     dark: '#3381ff', // secondary-blue
     light: '#636669', // medium grey
     switch: '#0054d8', // primary-blue
+    blueSwitch: '#0054d8', //primary-blue
   },
   secondary: {
     dark: '#106dff', // hover blue
