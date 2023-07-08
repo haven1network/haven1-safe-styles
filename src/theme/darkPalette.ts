@@ -79,6 +79,10 @@ const darkPalette = {
     main: '#FFF',
     hover: '#3381ff',
   },
+  hover: {
+    light: '#000000',
+    dark: '#2C2C2C',
+  },
 };
 
 export default darkPalette;

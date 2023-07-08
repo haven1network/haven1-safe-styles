@@ -33,6 +33,10 @@ declare module '@mui/material/styles' {
       main: string;
       hover: string;
     };
+    hover: {
+      light: string;
+      dark: string;
+    };
   }
   export interface PaletteOptions {
     border: PaletteOptions['primary'];
@@ -57,6 +61,10 @@ declare module '@mui/material/styles' {
     links: {
       main: string;
       hover: string;
+    };
+    hover: {
+      light: string;
+      dark: string;
     };
   }
 
@@ -140,6 +148,12 @@ const createSafeTheme = (mode: PaletteMode): Theme => {
             style: {
               padding: '12px 48px',
             },
+          },
+          {
+            props: { variant: 'outlined' },
+            style: ({ theme }) => ({
+              color: theme.palette.primary.dark,
+            }),
           },
           {
             props: { variant: 'danger' },
@@ -559,10 +573,8 @@ const createSafeTheme = (mode: PaletteMode): Theme => {
             fontWeight: 700,
             color: theme.palette.links.main,
             textDecoration: 'none',
-            borderBottom: `1px solid transparent`,
             '&:hover': {
               color: theme.palette.links.hover,
-              borderBottom: `1px solid ${theme.palette.links.hover}`,
             },
           }),
         },
