@@ -8,6 +8,7 @@ const darkPalette = {
     main: '#0054d8', // primary blue
     dark: '#3381ff', // secondary-blue
     light: '#A1A3A7', // light grey
+    switch: '#FFFFFF', // White
   },
   secondary: {
     dark: '#106dff', // hover blue
