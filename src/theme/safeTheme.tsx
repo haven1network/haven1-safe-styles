@@ -148,12 +148,6 @@ const createSafeTheme = (mode: PaletteMode): Theme => {
             },
           },
           {
-            props: { variant: 'outlined' },
-            style: ({ theme }) => ({
-              color: theme.palette.primary.dark,
-            }),
-          },
-          {
             props: { variant: 'danger' },
             style: ({ theme }) => ({
               backgroundColor: theme.palette.error.background,
