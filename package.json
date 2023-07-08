@@ -1,6 +1,6 @@
 {
   "name": "@h1pkgs/safe-styles",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "description": "Safe UI components",
   "main": "dist/index.min.js",
   "typings": "dist/index.d.ts",
