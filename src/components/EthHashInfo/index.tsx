@@ -85,7 +85,7 @@ const EthHashInfo = ({
 
         <AddressContainer>
           <Box fontWeight="inherit" fontSize="inherit">
-            {showPrefix && shouldPrefix && prefix && <b>{prefix}:</b>}
+            {showPrefix && shouldPrefix && prefix && <b>{prefix}:&nbsp;</b>}
             <span>
               {shortAddress || isMobile ? shortenAddress(address) : address}
             </span>

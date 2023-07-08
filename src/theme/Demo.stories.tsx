@@ -9,6 +9,7 @@ import FormControl from '@mui/material/FormControl';
 import InputLabel from '@mui/material/InputLabel';
 import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
+import EthHashInfo from '../components/EthHashInfo';
 import Link from '@mui/material/Link';
 
 export const SimpleDemo = (): React.ReactElement => {
@@ -33,6 +34,20 @@ export const SimpleDemo = (): React.ReactElement => {
           exercitationem quibusdam eos quae!
         </Typography>
       </div>
+
+      {/* EthHashInfo demo */}
+      {/* In order to see the demo of the prefix, set shouldPrefix = true in ../components/EthHashInfo */}
+      <Typography variant="h5">EthHashInfo</Typography>
+      <EthHashInfo
+        address="0x123456789abcdef"
+        name="John Doe"
+        showAvatar={true}
+        showCopyButton={true}
+        copyPrefix={true}
+        showPrefix={true}
+        shortAddress={false}
+        prefix="Haven"
+      />
 
       <Stack spacing={2} direction="column" alignItems={'flex-start'}>
         {/* TextField demo */}
