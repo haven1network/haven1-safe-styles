@@ -458,7 +458,7 @@ const createSafeTheme = (mode: PaletteMode): Theme => {
       MuiFormControl: {
         styleOverrides: {
           root: ({ theme }) => ({
-            '&:focus-within, &:hover': {
+            '&:hover': {
               '& .MuiFormLabel-root': {
                 color: theme.palette.constants.inverse,
               },
