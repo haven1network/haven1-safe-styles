@@ -13,7 +13,13 @@ declare module '@mui/material/styles' {
     border: Palette['primary'];
     logo: Palette['primary'];
     backdrop: Palette['primary'];
-    static: Palette['primary'];
+    static: {
+      main: string;
+      white: string;
+      brand_blue: string; // Added property
+      middle_blue: string;
+      light_blue: string;
+    };
     switch: {
       black_white: string;
       blue: string;
@@ -37,7 +43,13 @@ declare module '@mui/material/styles' {
     border: PaletteOptions['primary'];
     logo: PaletteOptions['primary'];
     backdrop: PaletteOptions['primary'];
-    static: PaletteOptions['primary'];
+    static: {
+      main: string;
+      white: string;
+      brand_blue: string; // Added property
+      middle_blue: string;
+      light_blue: string;
+    };
     switch: {
       black_white: string;
       blue: string;
