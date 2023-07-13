@@ -14,14 +14,10 @@ declare module '@mui/material/styles' {
     logo: Palette['primary'];
     backdrop: Palette['primary'];
     static: Palette['primary'];
-    constants: {
-      inverse: string;
-      dark: string;
-      white: string;
-      darkBlue: string;
-      primaryBlue: string;
-      secondaryBlue: string;
-      paleBlue: string;
+    switch: {
+      black_white: string;
+      blue: string;
+      blue_white: string;
     };
     neutrals: {
       dark: string;
@@ -42,14 +38,10 @@ declare module '@mui/material/styles' {
     logo: PaletteOptions['primary'];
     backdrop: PaletteOptions['primary'];
     static: PaletteOptions['primary'];
-    constants: {
-      inverse: string;
-      dark: string;
-      white: string;
-      darkBlue: string;
-      primaryBlue: string;
-      secondaryBlue: string;
-      paleBlue: string;
+    switch: {
+      black_white: string;
+      blue: string;
+      blue_white: string;
     };
     neutrals: {
       dark: string;
@@ -460,17 +452,17 @@ const createSafeTheme = (mode: PaletteMode): Theme => {
           root: ({ theme }) => ({
             '&:focus-within, &:hover': {
               '& .MuiFormLabel-root': {
-                color: theme.palette.constants.inverse,
+                color: theme.palette.switch.black_white,
               },
               '& .MuiFormLabel-root-MuiInputLabel-root.Mui-focused ': {
-                color: theme.palette.constants.inverse,
+                color: theme.palette.switch.black_white,
               },
               '& .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline': {
-                borderColor: theme.palette.constants.inverse,
+                borderColor: theme.palette.switch.black_white,
               },
               '&.MuiOutlinedInput-root .MuiSvgIcon-root.MuiSelect-iconOpen  .MuiOutlinedInput-notchedOutline':
                 {
-                  borderColor: theme.palette.constants.inverse,
+                  borderColor: theme.palette.switch.black_white,
                 },
             },
           }),
@@ -484,7 +476,7 @@ const createSafeTheme = (mode: PaletteMode): Theme => {
               height: '1rem',
             },
             '&.MuiSelect-iconOpen + .MuiOutlinedInput-notchedOutline': {
-              borderColor: theme.palette.constants.inverse,
+              borderColor: theme.palette.switch.black_white,
             },
           }),
         },
@@ -500,7 +492,7 @@ const createSafeTheme = (mode: PaletteMode): Theme => {
 
             '&:hover, &:focus, &.Mui-focused': {
               backgroundColor: theme.palette.background.paper,
-              borderColor: theme.palette.constants.inverse,
+              borderColor: theme.palette.switch.black_white,
             },
           }),
         },
@@ -566,7 +558,7 @@ const createSafeTheme = (mode: PaletteMode): Theme => {
             color: theme.palette.links.main,
             textDecoration: 'none',
             '&:hover': {
-              color: theme.palette.links.hover,
+              color: theme.palette.switch.blue_white,
             },
           }),
         },

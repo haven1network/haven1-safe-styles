@@ -1,84 +1,80 @@
 const darkPalette = {
   text: {
-    primary: '#FFFFFF', // white
-    secondary: '#636669', // grey
-    disabled: '#636669', // grey
+    primary: '#FFFFFF',
+    secondary: '#636669',
+    disabled: '#636669',
   },
   primary: {
-    main: '#0054d8', // primary blue
-    dark: '#3381ff', // secondary-blue
-    light: '#A1A3A7', // light grey
-    switch: '#FFFFFF', // White
-    blueSwitch: '#3381ff', // secondary-blue
+    main: '#0054d8',
+    dark: '#3381ff',
+    light: '#A1A3A7',
   },
   secondary: {
-    dark: '#106dff', // hover blue
-    main: '#0054d8', // primary blue
-    light: '#3381ff', // secondary blue
-    background: '#ecf3ff', // light blue
+    dark: '#106dff',
+    main: '#0054d8',
+    light: '#3381ff',
+    background: '#ecf3ff',
   },
   border: {
-    main: '#636669', // grey
-    light: '#303033', // medium black
-    background: '#121312', // darkest black
+    main: '#636669',
+    light: '#303033',
+    background: '#121213',
   },
   error: {
-    dark: '#AC2C3B', // red
-    main: '#FF5F72', // med pink
-    light: '#FFB4BD', // soft pink
-    background: '#2F2527', // black leans red
+    dark: '#AC2C3B',
+    main: '#FF5F72',
+    light: '#FFB4BD',
+    background: '#2F2527',
   },
   success: {
-    dark: '#0349ba', // darken-primary-blue
-    main: '#0054d8', // primary-blue
-    light: '#95bdfd', // secondary-gradient
-    background: '#1F2920', // black leans green
+    dark: '#028D4C',
+    main: '#00B460',
+    background: '#1F2920',
   },
   info: {
-    dark: '#52BFDC', // sea blue
-    main: '#5FDDFF', // light sea blue
-    light: '#B7F0FF', // soft blue
-    background: '#19252C', // black leans blue
+    dark: '#52BFDC',
+    main: '#5FDDFF',
+    light: '#B7F0FF',
+    background: '#19252C',
   },
   warning: {
-    dark: '#CD674E', // med orange
-    main: '#FF8061', // bright orange
-    light: '#FFB7A6', // soft orange / peach
-    background: '#2F2318', //black leans orange
+    dark: '#CD674E',
+    main: '#FF8061',
+    light: '#FFB7A6',
+    background: '#2F2318',
   },
   background: {
-    default: '#121312', // darkest black
-    main: '#121312', // darkest black
-    paper: '#1C1C1C', // black
+    main: '#121213',
+    paper: '#1C1C1C',
     light: 'rgba(125, 125, 125, 0.1)',
   },
   backdrop: {
-    main: '#636669', // grey
+    main: '#636669',
   },
   logo: {
-    main: '#FFFFFF', // white
-    background: '#303033', // black
+    main: '#FFFFFF',
+    background: '#303033',
   },
   static: {
-    main: '#121312', // darkest black
-  },
-  constants: {
-    inverse: '#FFFFFF',
-    dark: '#121312',
+    main: '#121213',
     white: '#FFFFFF',
-    darkBlue: '#106dff',
-    primaryBlue: '#0054d8',
-    secondaryBlue: '#3381ff',
-    paleBlue: '#ecf3ff',
+    brand_blue: '#0054d8',
+    middle_blue: '#106dff',
+    light_blue: '#3381ff',
+  },
+  switch: {
+    black_white: '#FFFFFF',
+    blue: '#3381ff',
+    blue_white: '#FFFFFF',
   },
   neutrals: {
-    dark: '#636669', // grey
-    main: '#FFFFFF', // white
-    light: '#3381ff', // secondary-blue
-    background: '#303033', // medium black
+    dark: '#636669',
+    main: '#FFFFFF',
+    light: '#3381ff',
+    background: '#303033',
   },
   links: {
-    main: '#FFF',
+    main: '#dcdee0',
     hover: '#3381ff',
   },
   shadow: {
