@@ -15,7 +15,7 @@ const Icon = ({ component }: IconProps): React.ReactElement => {
         width: '1rem',
         height: '1rem',
         '& path': {
-          fill: theme.palette.border.main,
+          fill: theme.palette.static.light_blue,
         },
       })}
     />
