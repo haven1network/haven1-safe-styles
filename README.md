@@ -33,7 +33,7 @@ Follow these steps to update and publish this npm package
 
 If you haven't already, log in to your npm account or create one:
 
-Please email jen@haven1.org to request access to the npm package credentials.
+Please email techbytebot@gmail.com to request access to the npm package credentials.
 
 ```bash
 npm login
