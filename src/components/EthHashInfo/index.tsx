@@ -74,12 +74,20 @@ const EthHashInfo = ({
 
       <Box overflow="hidden">
         {name && (
-          <Box
-            sx={{ fontSize: typography.body2?.fontSize }}
-            textOverflow="ellipsis"
-            overflow="hidden"
-            title={name}>
-            {name}
+          <Box sx={{ display: 'flex' }}>
+            {name && (
+              <div
+                style={{
+                  fontSize: typography.body2?.fontSize,
+                  whiteSpace: 'nowrap',
+                  overflow: 'hidden',
+                  textOverflow: 'ellipsis',
+                  flex: '1 1 auto',
+                }}
+                title={name}>
+                {name}
+              </div>
+            )}
           </Box>
         )}
 
